@@ -37,5 +37,5 @@ sed -i 's/default-settings.*/& luci-app-samba autosamba/' include/target.mk
 sed -i 's/net.netfilter.nf_conntrack_max=.*/net.netfilter.nf_conntrack_max=65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 
 sed -i '$a src-git smallpackage https://github.com/kenzok8/small-package' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+#sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 #sed -i '$a src-git jell https://github.com/kenzok8/jell' feeds.conf.default
